@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contemos caracteres</title>
+
+</head>
+
+<body>
+    <h2>Contador de Caracteres</h2>
+    <textarea id="mensaje" placeholder="Escribe aquí..." cols="30" rows="10"></textarea>
+    <p> Caracteres escritos:<span id="contar"></span></p>
+    <script>
+        const mensaje = document.getElementById('mensaje');
+        const contar = document.getElementById('contar');
+
+        mensaje.addEventListener('keyup', function () {
+            contar.innerText = mensaje.value.length;
+
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.contenedor {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    
+}
+
+.pink {
+    background-color: rgb(245, 222, 243);
+}
+
+.blue-light {
+
+    background-color: rgb(130, 233, 247);
+}
+
+.violet {
+    background-color: rgb(176, 61, 230);
+}

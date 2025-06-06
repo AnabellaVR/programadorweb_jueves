@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medio de transporte</title>
+</head>
+<body>
+    <script>
+        let distancia = Number(prompt("Ingresa la distancia en metros:"));
+        if (distancia <= 1000) {
+            console.log("Camina");
+        }
+        else if (distancia <= 10000) {
+            console.log("Ve en bicicleta");
+        }
+        else if (distancia <= 30000) {
+            console.log("Toma colectivo");
+        }
+        else if (distancia <= 100000) {
+            console.log("Ve en auto");
+        }
+        else {
+            console.log("Toma un avión");
+        }
+
+    </script>
+    
+</body>
+</html>

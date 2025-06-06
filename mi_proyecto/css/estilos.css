@@ -1,0 +1,35 @@
+/* font-family: "Scope One", serif;*/
+
+footer {
+    background-color: rgb(184, 173, 155);
+}
+
+.hero {
+    background: url(../img/istockphoto-1990444472-612x612.jpg) no-repeat;
+    background-size:  cover;
+    height: 0.5vh;
+    min-height: 900px;
+    color:black;
+}
+
+
+
+p {
+    font-family: "Scope One", serif;
+    font-size: 16px;
+    margin-top: 40px; 
+}
+
+.destacados {
+    font-family: "Scope One", serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+.margenes {
+    margin-top: 50px;
+    font-family: "Scope One", serif;
+    
+}
+h3 {
+    font-weight: bold; 
+}

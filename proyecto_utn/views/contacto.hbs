@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div id="referencias" class="row justify-content-evenly">
+        <div class="col-md-5 mt-5 ms-3 ">
+            <img src="img/Contactanos.jpg" class="img-fluid" alt="...">
+        </div>
+        <div class="col-md-5 mt-5 ms-3">
+            <h3>Contactanos</h3>
+            <form class="row g-3" action="/contacto" method="post">
+                <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre">
+                </div>
+                <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido">
+                </div>
+                <div class="col-12">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="email@email.com">
+                </div>
+                <div class="col-12">
+                    <label for="tel" class="form-label">Tel</label>
+                    <input type="text" class="form-control" id="tel" name="tel" placeholder="...">
+                </div>
+                <div class="col-12">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            {{message}}
+        </div>
+    </div>
+</div>

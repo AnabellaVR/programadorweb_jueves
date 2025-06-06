@@ -1,0 +1,30 @@
+.margenes {
+    margin-top: 50px;
+    margin-left: 450px;
+    padding-bottom: 50px;
+
+}
+
+.rango {
+    margin-top: 100px;
+    padding-left: 40px;
+}
+
+.destacados {
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.centrado{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 100px;
+}
+
+footer{
+    background-color: rgb(94, 177, 180);
+    text-align: center;
+    margin-top: 50px;
+    padding: 50px;
+    
+}
