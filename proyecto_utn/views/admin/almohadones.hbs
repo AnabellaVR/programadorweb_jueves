@@ -11,11 +11,11 @@
     {{!-- fin de la fila 1 --}}
     {{!-- Inicio fila 2 --}}
     <div class="row">
-        <div class="col-7" style="margin-top: 9px ;">
+        <div class="col-7" style="margin-top: 9px ;"> 
             <h2>Listado de Almohadones</h2>
         </div>
         <div class="col-5 text-end">
-            <a href="#" class="btn btn-success"><i class="fa fa-plus"></i>Nuevo</a>
+            <a href="/admin/almohadones/agregar" class="btn btn-success "><i class="fa fa-plus me-3"></i>Nuevo</a>
         </div>
     </div>
     {{!-- fin fila 2 --}}
@@ -34,12 +34,14 @@
                 <tbody>
                     {{#each almohadones}}
                     <tr>
-                        <th scope="row">{{id}}</th>
+                        <th scope="row">{{id}}</th> 
                         <td>{{titulo}}</td>
                         <td>{{cuerpo}}</td>
                         <td class="text-center">
-                            <a href="#" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
-                            <a href="/admin/almohadones/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
+                            <a href="/admin/almohadones/modificar/{{id}}" class="btn btn-sm btn-secondary"><i
+                                    class="fa fa-pencil"></i></a>
+                            <a href="/admin/almohadones/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i
+                                    class="fa fa-trash"></i></a>
                         </td>
                     </tr>
                     {{/each}}

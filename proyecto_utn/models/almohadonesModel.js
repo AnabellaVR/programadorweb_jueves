@@ -14,4 +14,34 @@ async function deleteAlmohadonesById(id) {
     
 }
 
-module.exports = { getAlmohadones, deleteAlmohadonesById }
+
+async function insertAlmohadones(obj) {
+    try {
+        var query = "insert into almohadones set ?";
+        var rows = await pool.query(query, [obj]);
+        return rows;
+    } catch (error) { 
+        throw error;
+    } //cierre catch//
+} //cierre insert//
+
+/*trae 1 solo almohadón*/
+async function getAlmohadonesById(id) {
+    var query = "select * from almohadones where id =?";
+    var rows =await pool.query(query, [id]);
+    return rows[0];    
+}
+
+/*modificar los almohadones por el id */
+async function modificarAlmohadonesById(obj, id) {
+    try{
+        var query ="update almohadones set ? where id=?";
+        var rows = await pool.query(query, [obj, id]);
+        return rows;
+    } catch (error) {
+        throw error;
+    }
+    
+}
+
+module.exports = { getAlmohadones, deleteAlmohadonesById, insertAlmohadones, getAlmohadonesById, modificarAlmohadonesById }

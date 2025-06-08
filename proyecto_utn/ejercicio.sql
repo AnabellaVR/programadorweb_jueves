@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 07-06-2025 a las 12:34:42
+-- Tiempo de generación: 08-06-2025 a las 22:46:48
 -- Versión del servidor: 9.1.0
 -- Versión de PHP: 8.3.14
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `almohadones` (
   `titulo` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `cuerpo` text COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `almohadones`
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `almohadones` (
 INSERT INTO `almohadones` (`id`, `titulo`, `cuerpo`) VALUES
 (1, 'Almohadón \"Aurum Helénico\"', 'Un dúo de almohadones que combina el lujo del negro con el esplendor del dorado, inspirados en la elegancia de la Grecia clásica. El detalle central en pasamanería griega con flecos otorga un aire de distinción y carácter, ideal para ambientes sobrios con acentos de sofisticación. Perfectos para realzar un sillón de cuero, una cama neutra o un rincón de lectura con impronta clásica y atemporal.'),
 (2, 'Almohadón \"Estocolmo\"', 'Diseño minimalista con franjas en blanco, gris, dorado y negro. Sofisticado y moderno, ideal para ambientes nórdicos o urbanos con estilo.'),
-(4, 'Almohadón \"Estocolmo\"', 'Diseño minimalista con franjas en blanco, gris, dorado y negro. Sofisticado y moderno, ideal para ambientes nórdicos o urbanos con estilo.'),
+(4, 'Almohadón \"Estocolmo\"', 'Diseño minimalista, sofisticado y moderno, ideal para ambientes nórdicos o urbanos con estilo.'),
 (5, 'Almohadón \"Esmeralda\"', 'Almohadón de terciopelo verde profundo con costuras en diagonal y una franja dorada central. Elegante y vibrante, perfecto para sumar lujo y textura.'),
 (6, 'Almohadón \"Perla Zigzag, Flor de Nieve, Arabesco\"', ' Diseño en chevron bordado con cuentas. Elegante, delicado y perfecto para dar un toque glam a camas o sillones en tonos neutros.\r\nAlmohadón con flores en relieve suave y etéreo su textura aporta calidez visual, perfecta para combinar. '),
 (7, 'Almohadón \"Abeja Real y Colmena Gris\"', 'Este modelo combina sobriedad y carácter con un diseño bordado de abeja sobre lino claro. Ideal para quienes aman los detalles únicos y sofisticados.\r\n Con estructura geométrica y tonos neutros, este almohadón evoca la precisión de una colmena. Aporta contraste y estructura, complementando el diseño majestuoso de Abeja Real.'),
