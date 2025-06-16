@@ -26,7 +26,7 @@ router.post('/', async (req, res, next) => {
       req.session.id_usuario = data.id;
       req.session.nombre = data.usuario;
 
-      res.redirect('/admin/almohadones');
+      res.redirect('/admin');/*('/admin/almohadones')*/
     } else {
       res.render('admin/login', {
         layout: 'admin/layout',
@@ -38,9 +38,9 @@ router.post('/', async (req, res, next) => {
   }
 }) //cierra el post
 
-router.get('/logout', function (req,res,next) {
+router.get('/logout', function (req, res, next) {
   req.session.destroy(); //destruye la sessión
-  res.render('admin/login',{
+  res.render('admin/login', {
     layout: 'admin/layout'
   });
 });

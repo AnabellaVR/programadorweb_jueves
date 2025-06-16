@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 08-06-2025 a las 22:46:48
+-- Tiempo de generación: 16-06-2025 a las 19:13:43
 -- Versión del servidor: 9.1.0
 -- Versión de PHP: 8.3.14
 
@@ -30,29 +30,29 @@ SET time_zone = "+00:00";
 DROP TABLE IF EXISTS `almohadones`;
 CREATE TABLE IF NOT EXISTS `almohadones` (
   `id` int NOT NULL AUTO_INCREMENT,
+  `img_id` varchar(250) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `titulo` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
   `cuerpo` text COLLATE utf8mb4_general_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `almohadones`
 --
 
-INSERT INTO `almohadones` (`id`, `titulo`, `cuerpo`) VALUES
-(1, 'Almohadón \"Aurum Helénico\"', 'Un dúo de almohadones que combina el lujo del negro con el esplendor del dorado, inspirados en la elegancia de la Grecia clásica. El detalle central en pasamanería griega con flecos otorga un aire de distinción y carácter, ideal para ambientes sobrios con acentos de sofisticación. Perfectos para realzar un sillón de cuero, una cama neutra o un rincón de lectura con impronta clásica y atemporal.'),
-(2, 'Almohadón \"Estocolmo\"', 'Diseño minimalista con franjas en blanco, gris, dorado y negro. Sofisticado y moderno, ideal para ambientes nórdicos o urbanos con estilo.'),
-(4, 'Almohadón \"Estocolmo\"', 'Diseño minimalista, sofisticado y moderno, ideal para ambientes nórdicos o urbanos con estilo.'),
-(5, 'Almohadón \"Esmeralda\"', 'Almohadón de terciopelo verde profundo con costuras en diagonal y una franja dorada central. Elegante y vibrante, perfecto para sumar lujo y textura.'),
-(6, 'Almohadón \"Perla Zigzag, Flor de Nieve, Arabesco\"', ' Diseño en chevron bordado con cuentas. Elegante, delicado y perfecto para dar un toque glam a camas o sillones en tonos neutros.\r\nAlmohadón con flores en relieve suave y etéreo su textura aporta calidez visual, perfecta para combinar. '),
-(7, 'Almohadón \"Abeja Real y Colmena Gris\"', 'Este modelo combina sobriedad y carácter con un diseño bordado de abeja sobre lino claro. Ideal para quienes aman los detalles únicos y sofisticados.\r\n Con estructura geométrica y tonos neutros, este almohadón evoca la precisión de una colmena. Aporta contraste y estructura, complementando el diseño majestuoso de Abeja Real.'),
-(8, 'Almohadones \"Terra\"', 'Hecho en lana tejida con motivos en relieve y cuadros, en tonos tierra y verdes apagados. Aporta calidez y profundidad visual a todo tipo de espacios.'),
-(9, 'Almohadón \"Fresno\"', 'Estampado con ramas y hojas en tonos verdes sobre fondo marfil, este almohadón transmite frescura y naturaleza. Ideal para ambientes cálidos, rincones de lectura o livings con detalles botánicos.'),
-(10, 'Almohadón \"Ondas de Seda\"', 'Diseñado con una textura diagonal que genera movimiento visual, este modelo en tono marfil aporta suavidad, elegancia y dinamismo a cualquier dormitorio o sofá de líneas delicadas.'),
-(11, 'Almohadón \"Lino Dorado\"', 'Confeccionado en lino sintético color dorado tostado, este almohadón de acabado sobrio y atemporal aporta presencia sin estridencias. Una pieza versátil para sumar textura y calidez a tu decoración.'),
-(12, 'Almohadón \"Pecan\"', 'Confeccionado en tela de algodón texturado color crudo, realzado con una cinta de terciopelo color caramelo que lo atraviesa sutilmente. Ideal para aportar calidez y sofisticación a camas o sillones en tonos neutros'),
-(13, 'Almohadón \"Cuadro Ivory\"', 'Minimalismo y textura se combinan en este almohadón de gamuza sintética color marfil. Las costuras marcadas en forma de cuadrícula aportan un diseño moderno y limpio. Perfecto para ambientes contemporáneos y luminosos.'),
-(14, 'Almohadón \"Chocolate Urbano\"', 'De estilo moderno e impactante, este almohadón de gamuza en tono chocolate oscuro incluye un diseño geométrico de costuras a tono. Viene en conjunto con un modelo más pequeño para completar la escena. Ideal para un living elegante o un rincón de lectura con personalidad.');
+INSERT INTO `almohadones` (`id`, `img_id`, `titulo`, `cuerpo`) VALUES
+(1, 'dccg0cj41rp1jvyvgjgc', 'Almohadón \"Aurum Helénico\"', 'Un dúo de almohadones que combina el lujo del negro con el esplendor del dorado, inspirados en la elegancia de la Grecia clásica. El detalle central en pasamanería griega con flecos otorga un aire de distinción y carácter, ideal para ambientes sobrios con acentos de sofisticación. Perfectos para realzar un sillón de cuero, una cama neutra o un rincón de lectura con impronta clásica y atemporal.'),
+(2, 'fjc4rcelnegxf7wk02cw', 'Almohadón \"Estocolmo\"', 'Diseño minimalista con franjas en blanco, gris, dorado y negro. Sofisticado y moderno, ideal para ambientes nórdicos o urbanos con estilo.'),
+(5, 'qdwl8bhhdtidvnclcp0h', 'Almohadón \"Esmeralda\"', 'Almohadón de terciopelo verde profundo con costuras en diagonal y una franja dorada central. Elegante y vibrante, perfecto para sumar lujo y textura.'),
+(6, 'vfkrwztmsfu3firmnbeb', 'Almohadón \"Perla Zigzag, Flor de Nieve, Arabesco\"', ' Diseño en chevron bordado con cuentas. Elegante, delicado y perfecto para dar un toque glam a camas o sillones en tonos neutros.\r\nAlmohadón con flores en relieve suave y etéreo su textura aporta calidez visual, perfecta para combinar. '),
+(7, 'xnf1gsobx9tizviee2qg', 'Almohadón \"Abeja Real y Colmena Gris\"', 'Este modelo combina sobriedad y carácter con un diseño bordado de abeja sobre lino claro. Ideal para quienes aman los detalles únicos y sofisticados.\r\n Con estructura geométrica y tonos neutros, este almohadón evoca la precisión de una colmena. Aporta contraste y estructura, complementando el diseño majestuoso de Abeja Real.'),
+(8, 'zrdgagec0rkr22j7w0tk', 'Almohadones \"Terra\"', 'Hecho en lana tejida con motivos en relieve y cuadros, en tonos tierra y verdes apagados. Aporta calidez y profundidad visual a todo tipo de espacios.'),
+(9, 'qyhzun0n2u680elothl3', 'Almohadón \"Fresno\"', 'Estampado con ramas y hojas en tonos verdes sobre fondo marfil, este almohadón transmite frescura y naturaleza. Ideal para ambientes cálidos, rincones de lectura o livings con detalles botánicos.'),
+(10, 'g7no9wggrzlklxnr74cx', 'Almohadón \"Ondas de Seda\"', 'Diseñado con una textura diagonal que genera movimiento visual, este modelo en tono marfil aporta suavidad, elegancia y dinamismo a cualquier dormitorio o sofá de líneas delicadas.'),
+(11, 'eybru5jbcmj8mwqdprdk', 'Almohadón \"Lino Dorado\"', 'Confeccionado en lino sintético color dorado tostado, este almohadón de acabado sobrio y atemporal aporta presencia sin estridencias. Una pieza versátil para sumar textura y calidez a tu decoración.'),
+(12, 'uadnmegheshempsjijbz', 'Almohadón \"Pecan\"', 'Confeccionado en tela de algodón texturado color crudo, realzado con una cinta de terciopelo color caramelo que lo atraviesa sutilmente. Ideal para aportar calidez y sofisticación a camas o sillones en tonos neutros'),
+(13, 'tz4mhkdxanuen2tmstfz', 'Almohadón \"Cuadro Ivory\"', 'Minimalismo y textura se combinan en este almohadón de gamuza sintética color marfil. Las costuras marcadas en forma de cuadrícula aportan un diseño moderno y limpio. Perfecto para ambientes contemporáneos y luminosos.'),
+(14, 'qjelgpxwljw2albr6qkg', 'Almohadón \"Chocolate Urbano\"', 'De estilo moderno e impactante, este almohadón de gamuza en tono chocolate oscuro incluye un diseño geométrico de costuras a tono. Viene en conjunto con un modelo más pequeño para completar la escena. Ideal para un living elegante o un rincón de lectura con personalidad.');
 
 -- --------------------------------------------------------
 
@@ -99,6 +99,30 @@ INSERT INTO `empleados` (`id_emp`, `nombre`, `apellido`, `trabajo`, `edad`, `sal
 (21, 'Mariano', 'Dharma', 'Presidente', 28, 300000, 'mariano@bignet.com'),
 (22, 'Francisco', 'Pérez', 'Programador', 26, 90000, 'francisco@bignet.com'),
 (24, 'Agustin', 'Gayol', 'Diseñador Web', 28, 130000, 'ag@bignet.com');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `novedades`
+--
+
+DROP TABLE IF EXISTS `novedades`;
+CREATE TABLE IF NOT EXISTS `novedades` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `img_id` varchar(250) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `titulo` varchar(250) COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `novedades`
+--
+
+INSERT INTO `novedades` (`id`, `img_id`, `titulo`) VALUES
+(1, 'fknypyi0mopefbdzkg9g', 'Almohadón \"Oro y Obsidiana\"'),
+(2, 'gmzury3bqhjgir89fqc5', 'Almohadón \"Botánica Tropical\"'),
+(3, 'irmvkq7s3snhpxnrcd5l', 'Almohadón \"Brisa Marina\"'),
+(4, 'djih29wvmrmtv1gx6jej', 'Almohadón \"Alanna y Dalia\"');
 
 -- --------------------------------------------------------
 

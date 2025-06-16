@@ -1,5 +1,5 @@
 <div class="container" style="margin: 50px auto;">
-    {{!-- Iniciofila 1 --}}
+    {{!-- Inicio fila 1 --}}
     <div class="row">
         <div class="col">
             <p class="text-end">Hola {{usuario}}!
@@ -11,21 +11,22 @@
     {{!-- fin de la fila 1 --}}
     {{!-- Inicio fila 2 --}}
     <div class="row">
-        <div class="col-7" style="margin-top: 9px ;"> 
+        <div class="col-7 mt-2" style="margin-top: 9px;">
             <h2>Listado de Almohadones</h2>
         </div>
         <div class="col-5 text-end">
-            <a href="/admin/almohadones/agregar" class="btn btn-success "><i class="fa fa-plus me-3"></i>Nuevo</a>
+            <a href="/admin/almohadones/agregar" class="btn btn-success "><i class="fa fa-plus me-2"></i>Nuevo</a>
         </div>
     </div>
     {{!-- fin fila 2 --}}
     {{!-- inicio fila 3 --}}
-    <div class="row">
+    <div class="row mt-3">
         <div class="col">
-            <table class="table">
+            <table class="table table-bordered table-hover align-middle text-centerr">
                 <thead class="table-dark">
                     <tr>
                         <th scope="col">#</th>
+                        <th scope="col" class="text-center">Imagen</th>
                         <th scope="col" class="text-center">Título</th>
                         <th scope="col" class="text-center">Cuerpo</th>
                         <th scope="col" class="text-center">Acciones</th>
@@ -34,14 +35,17 @@
                 <tbody>
                     {{#each almohadones}}
                     <tr>
-                        <th scope="row">{{id}}</th> 
+                        <th scope="row">{{id}}</th>
+                        <td>{{{imagen}}}</td>
                         <td>{{titulo}}</td>
                         <td>{{cuerpo}}</td>
                         <td class="text-center">
-                            <a href="/admin/almohadones/modificar/{{id}}" class="btn btn-sm btn-secondary"><i
-                                    class="fa fa-pencil"></i></a>
-                            <a href="/admin/almohadones/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i
-                                    class="fa fa-trash"></i></a>
+                            <div class="d-inline-flex">
+                                <a href="/admin/almohadones/modificar/{{id}}" class="btn btn-sm btn-secondary me-1"><i
+                                        class="fa fa-pencil"></i></a>
+                                <a href="/admin/almohadones/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i
+                                        class="fa fa-trash"></i></a>
+                            </div>
                         </td>
                     </tr>
                     {{/each}}

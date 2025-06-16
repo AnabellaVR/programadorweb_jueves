@@ -2,16 +2,16 @@ var pool = require('./bd');
 
 
 async function getAlmohadones() {
-        var query = 'select * from almohadones';
-        var rows = await pool.query(query);
-        return rows;    
+    var query = 'select * from almohadones';
+    var rows = await pool.query(query);
+    return rows;
 }
 
 async function deleteAlmohadonesById(id) {
     var query = 'delete from almohadones where id = ?';
     var rows = await pool.query(query, [id]);
     return rows;
-    
+
 }
 
 
@@ -20,7 +20,7 @@ async function insertAlmohadones(obj) {
         var query = "insert into almohadones set ?";
         var rows = await pool.query(query, [obj]);
         return rows;
-    } catch (error) { 
+    } catch (error) {
         throw error;
     } //cierre catch//
 } //cierre insert//
@@ -28,20 +28,20 @@ async function insertAlmohadones(obj) {
 /*trae 1 solo almohadón*/
 async function getAlmohadonesById(id) {
     var query = "select * from almohadones where id =?";
-    var rows =await pool.query(query, [id]);
-    return rows[0];    
+    var rows = await pool.query(query, [id]);
+    return rows[0];
 }
 
 /*modificar los almohadones por el id */
 async function modificarAlmohadonesById(obj, id) {
-    try{
-        var query ="update almohadones set ? where id=?";
+    try {
+        var query = "update almohadones set ? where id=?";
         var rows = await pool.query(query, [obj, id]);
         return rows;
     } catch (error) {
         throw error;
     }
-    
+
 }
 
 module.exports = { getAlmohadones, deleteAlmohadonesById, insertAlmohadones, getAlmohadonesById, modificarAlmohadonesById }

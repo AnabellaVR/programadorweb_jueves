@@ -6,12 +6,16 @@ var logger = require('morgan');
 
 require('dotenv').config();
 const session = require('express-session');
+var fileUpload = require('express-fileupload');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
 var loginRouter = require('./routes/admin/login'); // >routes >admin >login.js
+var adminIndexRouter = require('./routes/admin/index');
+
 var adminRouter = require('./routes/admin/almohadones');  //almohadones.js
+var adminNovedadesRouter = require('./routes/admin/novedades');//novedades.js
 
 var proyectosRouter = require('./routes/proyectos'); //carpeta routes > proyecto.js
 
@@ -68,11 +72,20 @@ secured = async (req, res, next) => {
   }
 }
 
+app.use(fileUpload({
+  useTempFiles: true,
+  tempFileDir: '/tmp/'
+}));
+
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.use('/admin/login', loginRouter);
+app.use('/admin', secured, adminIndexRouter);
+
 app.use('/admin/almohadones', secured, adminRouter);
+app.use('/admin/novedades', secured, adminNovedadesRouter);
 
 app.use('/proyectos', proyectosRouter);
 
