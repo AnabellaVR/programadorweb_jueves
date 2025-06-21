@@ -44,4 +44,10 @@ async function modificarAlmohadonesById(obj, id) {
 
 }
 
-module.exports = { getAlmohadones, deleteAlmohadonesById, insertAlmohadones, getAlmohadonesById, modificarAlmohadonesById }
+async function buscarAlmohadones(busqueda) {
+    var query = "select * from almohadones where titulo like ? or cuerpo like ? ";
+    var rows = await pool.query(query, ['%' + busqueda + '%', '%' + busqueda + '%']);
+    return rows;
+}
+
+module.exports = { getAlmohadones, deleteAlmohadonesById, insertAlmohadones, getAlmohadonesById, modificarAlmohadonesById, buscarAlmohadones }

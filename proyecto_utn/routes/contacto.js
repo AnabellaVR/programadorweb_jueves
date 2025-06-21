@@ -20,8 +20,8 @@ router.post('/', async (req, res, next) => {
 
     var obj = {
         to: 'anabella_vr@hotmail.com',
-        subject: 'Contacto de la pagina Container estudio',
-        html: nombre + " " + apellido + "se contactó a través de la web y quiere más informacón a este correo: " + email + ".<br> Además, hizo este comentario: " + mensaje + " .<br> Su tel es : " + tel
+        subject: 'Contacto de la página Container estudio',
+        html: nombre + " " + apellido + " se contactó a través de la web y quiere más informacón a este correo: " + email + ".<br> Además, hizo este comentario: " + mensaje + " .<br> Su tel es : " + tel
     } //cierre de var obj
 
 

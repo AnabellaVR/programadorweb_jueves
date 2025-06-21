@@ -3,8 +3,11 @@ var router = express.Router();
 var almohadonesModel = require('../models/almohadonesModel');
 var cloudinary = require('cloudinary').v2;
 
+
+
 /* GET home page. */
 router.get('/', async function (req, res, next) {
+
   var almohadones = await almohadonesModel.getAlmohadones();
 
   almohadones = almohadones.slice(0, 12);

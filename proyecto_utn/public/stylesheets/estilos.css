@@ -5,11 +5,22 @@ footer {
 }
 
 .hero {
-    background: url(../img/istockphoto-1990444472-612x612.jpg) no-repeat;
-    background-size: cover;
-    height: 0.5vh;
-    min-height: 900px;
-    color: black;
+  background: url(../img/78c89e28ce033700df86f729a0a087d9.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 900px;
+  color: black;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero-texto {
+  margin-top: 240px;
+  color: aliceblue;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
@@ -45,14 +56,14 @@ h6 {
     font-family: "Scope One", serif;
 }
 
-#novedades,
+/*#novedades,*/
 #referencias,
 #bosses,
 #staff,
 #almohadones,
 #estilos,
 #proyectos {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .card-img-top {

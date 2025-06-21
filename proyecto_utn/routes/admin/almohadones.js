@@ -11,7 +11,14 @@ const destroy = util.promisify(cloudinary.uploader.destroy);
 /*sirve para listar almohadones*/
 router.get('/', async function (req, res, next) {
 
-  var almohadones = await almohadonesModel.getAlmohadones();
+  var almohadones
+  if (req.query.q === undefined){
+    almohadones = await almohadonesModel.getAlmohadones();
+  } else {
+    almohadones = await almohadonesModel.buscarAlmohadones(req.query.q);
+  }
+
+  //var almohadones = await almohadonesModel.getAlmohadones();/*<= esto debería irse ya que se escaló el proyecto(buscador)*/
 
   almohadones = almohadones.map(almohadones => {
     if (almohadones.img_id) {
@@ -35,7 +42,9 @@ router.get('/', async function (req, res, next) {
   res.render('admin/almohadones', { //almohadones.hbs
     layout: 'admin/layout',
     usuario: req.session.nombre,  /*flavia*/
-    almohadones
+    almohadones,
+    is_search: req.query.q !== undefined,
+    q: req.query.q
   });
 });
 /*eliminar almohadones*/

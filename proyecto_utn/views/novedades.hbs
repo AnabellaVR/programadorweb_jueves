@@ -1,23 +1,23 @@
-<div class="container-">
-    <div id="novedades" class="row justify-content-evenly">
-        <div class="col-md-5 mt-5 ms-3">
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<div class="container-fluid">
+    <div id="novedades" class="row align-items-center justify-content-evenly mt-5 pt-5">
+        <div class="col-md-5 ms-3">
+            <div id="carouselExampleSlidesOnly" class="carousel slide-fade" data-bs-ride="carousel"
+                data-bs-interval="4000">
                 <div class="carousel-inner">
                     {{#each novedades}}
                     <div class="carousel-item {{#if @first}}active{{/if}}">
-                        <img src="{{imagen}}" class="d-block w-100" alt="{{titulo}}">
+                        <img src="{{imagen}}" class="d-block w-100 rounded shadow-sm animate__animated animate__fadeIn"
+                            alt="{{titulo}}">
                     </div>
                     {{/each}}
                 </div>
             </div>
         </div>
 
-        <div class="col-md-5 mt-5 ms-3">
+        <div class="col-md-5 d-flex flex-column justify-content-center ms-3 animate__animated animate__fadeInRight">
             <h3 class="margenes">Diseño y Textura</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio temporibus, consectetur quo laborum
-                obcaecati vero dolore doloribus harum ab, maiores odit dolores vitae tempore voluptatibus consequuntur-
-                placeat quisquam culpa laboriosam.</p>
-
+            <p>Cada pieza está pensada para aportar textura, armonía y calidez. Usamos técnicas como crochet, telar y
+                punch needle, combinando lo artesanal con el diseño contemporáneo.</p>
         </div>
     </div>
 </div>

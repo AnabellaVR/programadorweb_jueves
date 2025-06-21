@@ -14,7 +14,16 @@
         <div class="col-7 mt-2" style="margin-top: 9px;">
             <h2>Listado de Almohadones</h2>
         </div>
-        <div class="col-5 text-end">
+        <div class="col-3">
+            <form class="d-flex" action="/admin/almohadones" method="get">
+                <input class="form-control" type="search" placeholder="Search" arial-label="Search" name="q" {{#if q}}
+                    value="{{q}}" {{/if}}>
+                <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"
+                        aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+        <div class="col-2 text-end">
             <a href="/admin/almohadones/agregar" class="btn btn-success "><i class="fa fa-plus me-2"></i>Nuevo</a>
         </div>
     </div>
@@ -51,6 +60,11 @@
                     {{/each}}
                 </tbody>
             </table>
+            {{#if is_search}}
+                {{#unless almohadones.length}}
+                No se encuentra resultados para "<b>{{q}}</b>"
+                {{/unless}}
+            {{/if}}
         </div>
     </div>
     {{!-- finde la fila 3 --}}
